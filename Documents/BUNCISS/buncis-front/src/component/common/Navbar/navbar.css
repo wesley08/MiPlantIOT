@@ -1,0 +1,29 @@
+.bgcolorr{
+    background-color:rgb(137, 197, 49); 
+}
+.navbardif{
+    height: 2.5vw;
+}
+.btnborder{
+    border:0px !important;
+    color: black !important;
+}
+
+.btnborder:hover{
+    color:white !important;
+    background-color: rgb(94, 150, 34) !important;
+}
+.transform {
+    -webkit-transition: all 2s ease;  
+    -moz-transition: all 2s ease;  
+    -o-transition: all 2s ease;  
+    -ms-transition: all 2s ease;  
+    transition: all 2s ease;
+  }
+  
+  .transform-active {
+    background-color: #45CEE0;
+    height: 200px;
+    width: 200px;
+  }
+    

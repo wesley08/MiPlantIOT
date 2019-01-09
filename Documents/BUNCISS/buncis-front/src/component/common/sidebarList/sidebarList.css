@@ -1,0 +1,17 @@
+.sidebar-list {
+    padding: 5px 15px !important;
+    transition: 0.5s ease;
+    color:black;
+  }
+  
+  .sidebar-list:hover {
+    background-color: rgb(137, 197, 49);
+    color: white;
+  }
+  .marginoff{
+    margin-right: 0px!important;
+  }
+
+  .middle{
+    text-align: center;
+  }

@@ -1,0 +1,16 @@
+.sidebar{
+    padding-top: 0% !important;
+    background-color: white !important;
+    /* border-right: 1px rgba(137, 197, 49, 0.5) solid; */
+}
+.logoBuncis{
+    font-size: 150%;
+    background-color: rgb(94, 150, 34);
+    display: flex;
+    justify-content: center;
+    padding: 0.34rem 1rem;
+}
+.sidebarcol{
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}

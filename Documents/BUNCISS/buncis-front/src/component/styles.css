@@ -1,0 +1,36 @@
+#wrapper {
+    width: 100%;
+  }
+  
+  .sidebar {
+    padding-top: 20px;
+    background-color: #343c49;
+    color: white !important;
+    height: 100vh;
+  }
+  
+  #logo {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  
+.modifrow{
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+.col-10{
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
+.col-12{
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
+
+.bgcolor{
+  background-color: rgba(0, 0, 0, 0.05) !important;
+}
+
+.dashboardstyle{
+  margin-top: 1rem;
+}
