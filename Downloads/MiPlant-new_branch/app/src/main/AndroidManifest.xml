@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.miplantiot">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".AddDevice"></activity>
+        <activity
+            android:name=".SideMenu"
+            android:label="@string/title_activity_side_menu"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Tester" />
+        <activity android:name=".ApprovelPaymentCustomer" />
+        <activity android:name=".ListItemAdmin" />
+        <activity android:name=".HistoryCheckOut" />
+        <activity android:name=".Cart" />
+        <activity android:name=".AdminAddingItemSHop" />
+        <activity android:name=".Shop" />
+        <activity android:name=".HomePage" />
+        <activity android:name=".ForgotPassword" />
+        <activity android:name=".SignInUpPage" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

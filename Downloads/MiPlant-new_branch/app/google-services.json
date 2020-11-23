@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "930960530231",
+    "firebase_url": "https://miplantiot.firebaseio.com",
+    "project_id": "miplantiot",
+    "storage_bucket": "miplantiot.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:930960530231:android:6d06159d26f2b2ddd7d8b2",
+        "android_client_info": {
+          "package_name": "com.example.miplantiot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "930960530231-07lco9vk0625jtokulls6sdob8k0ntt4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.miplantiot",
+            "certificate_hash": "3c17eccf1eb59108fca52f2fef34b3ee00c96fc0"
+          }
+        },
+        {
+          "client_id": "930960530231-q3s3g2takci3570jmpdijb8q5kc5mje1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0k6ccYPFn-9MQ61sx0ho26ROInP4HKKY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "930960530231-q3s3g2takci3570jmpdijb8q5kc5mje1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

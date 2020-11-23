@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="15dp"
+    tools:context=".AdminAddingItemSHop">
+
+    <TextView
+        android:id="@+id/txt_title_add_edit_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Adding Item Shop"
+        android:fontFamily="@font/gilroybold"
+        android:textSize="35dp"
+        android:textColor="@color/colorBlack"
+        android:layout_marginBottom="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/img_uploadimage"
+            android:background="@color/colorGrey"
+            android:layout_marginRight="30dp"/>
+
+        <Button
+            android:id="@+id/btn_upload_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:paddingHorizontal="15dp"
+            android:background="@drawable/radius_button_black"
+            android:text="upload"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Category"
+            android:layout_marginRight="30dp"/>
+        <RadioGroup
+            android:id="@+id/opsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/plant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plant"/>
+        <RadioButton
+            android:id="@+id/tools"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tools"/>
+        <RadioButton
+            android:id="@+id/seeds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seeds"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:layout_marginRight="30dp"/>
+        <EditText
+            android:id="@+id/edt_name_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Height of plant"
+            android:layout_marginRight="30dp"/>
+        <EditText
+            android:id="@+id/edt_height_of_plant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text=""/>
+    </LinearLayout>
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:stretchColumns="1">
+
+        <TableRow>
+            <TextView
+                android:text="Information "
+                android:padding="3dip" />
+            <TextView
+                android:text="Value"
+                android:padding="3dip" />
+        </TableRow>
+
+        <TableRow>
+            <EditText
+                android:id="@+id/edt_table_row_1_column_1"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="3dp"/>
+            <EditText
+                android:id="@+id/edt_table_row_1_column_2"
+                android:layout_width="180dp"
+                android:padding="3dp"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+        <TableRow>
+            <EditText
+                android:id="@+id/edt_table_row_2_column_1"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="3dp"/>
+            <EditText
+                android:id="@+id/edt_table_row_2_column_2"
+                android:layout_width="180dp"
+                android:padding="3dp"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content" />
+        </TableRow>
+        <TableRow>
+            <EditText
+                android:id="@+id/edt_table_row_3_column_1"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="3dp"/>
+            <EditText
+                android:id="@+id/edt_table_row_3_column_2"
+                android:layout_width="180dp"
+                android:padding="3dp"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content" />
+        </TableRow>
+        <TableRow>
+            <EditText
+                android:id="@+id/edt_table_row_4_column_1"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="3dp"/>
+            <EditText
+                android:id="@+id/edt_table_row_4_column_2"
+                android:layout_width="180dp"
+                android:padding="3dp"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/txt_price"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Price"
+                android:padding="3dp"/>
+            <EditText
+                android:id="@+id/edt_price"
+                android:layout_width="180dp"
+                android:padding="3dp"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/txt_weight"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Weight"
+                android:padding="3dp"/>
+            <EditText
+                android:id="@+id/edt_weight"
+                android:layout_width="180dp"
+                android:padding="3dp"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btn_submit_item_shop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/radius_button_black"
+        android:layout_margin="30dp"
+        android:text="Submit"/>
+
+    <TextView
+        android:id="@+id/txt_testinga"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:text="Price"
+        android:padding="3dp"/>
+</LinearLayout>

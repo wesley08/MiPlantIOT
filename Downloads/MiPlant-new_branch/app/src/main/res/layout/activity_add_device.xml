@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:src="@drawable/right_image_wave" />
+        <LinearLayout
+            android:padding="20dp"
+            android:id="@+id/ll_add_device"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="left"
+            android:layout_marginTop="30dp"
+            >
+
+            <TextView
+                android:id="@+id/txt_hello"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/gilroybold"
+                android:text="Register Device"
+                android:textColor="@color/colorBlack"
+                android:textSize="45dp" />
+            <TextView
+                android:id="@+id/txt_join"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/plant_regis"
+                android:textSize="15dp"
+                android:justificationMode="inter_word"
+                android:textColor="@color/colorGrey"
+                android:layout_marginBottom="40dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Code Device"
+                android:textSize="15dp"
+                android:textColor="@color/colorGrey"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="13dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MP - "
+                    android:textSize="15dp"
+                    android:textColor="@color/colorGrey"
+                    />
+                <EditText
+                    android:text="000001"
+                    android:id="@+id/edt_code_device"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Password Device"
+                android:textSize="15dp"
+                android:textColor="@color/colorGrey"
+                />
+            <EditText
+                android:text="MP000001"
+                android:id="@+id/edt_password_device"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="13dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Plant Name"
+                android:textSize="15dp"
+                android:textColor="@color/colorGrey"
+                />
+            <EditText
+                android:text="Bonsai"
+                android:id="@+id/edt_plant_name_device"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_marginBottom="13dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:orientation="vertical">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Plant Age"
+                    android:textSize="15dp"
+                    android:textColor="@color/colorGrey"
+                    android:layout_gravity="left"
+                    />
+
+                <EditText
+                    android:text="1"
+                    android:id="@+id/edt_plant_age_device"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_add_device_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:layout_marginLeft="30dp"
+                android:textColor="#fff"
+                style="@style/ButtonSignINUP"
+                android:background="@drawable/radius_button_black"
+                android:layout_gravity="right"
+                android:paddingHorizontal="65dp"
+                android:layout_marginTop="25dp"
+                />
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+</RelativeLayout>

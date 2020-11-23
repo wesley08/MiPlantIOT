@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/radius_button_white_without_line"
+    android:elevation="5dp"
+    android:layout_margin="10dp"
+    android:padding="20dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select your Address for shipping"
+        android:fontFamily="@font/gilroybold"
+        android:textSize="13dp"
+        android:textColor="@color/colorBlack"
+        />
+    <LinearLayout
+        android:id="@+id/ll_add_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:fontFamily="@font/gilroyreguler"
+            android:textSize="23dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/colorBlack"
+            />
+        <TextView
+            android:id="@+id/txt_add_cancel_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="add address"
+            android:fontFamily="@font/gilroyreguler"
+            android:textSize="13dp"
+            android:textColor="@color/colorBlack"
+            />
+    </LinearLayout>
+    <ScrollView
+        android:id="@+id/sv_add_address"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name Address"
+            android:textSize="15dp"
+            android:fontFamily="@font/gilroylight"
+            android:textColor="@color/colorGrey"
+            />
+        <EditText
+            android:id="@+id/edt_name_address_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name Receiver"
+            android:textSize="15dp"
+            android:fontFamily="@font/gilroylight"
+            android:textColor="@color/colorGrey"
+            />
+        <EditText
+            android:id="@+id/edt_name_receiver_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone Number"
+            android:textSize="15dp"
+            android:fontFamily="@font/gilroylight"
+            android:textColor="@color/colorGrey"
+            />
+        <EditText
+            android:id="@+id/edt_phone_number_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Provience"
+            android:textSize="15dp"
+            android:fontFamily="@font/gilroylight"
+            android:textColor="@color/colorGrey"
+            />
+
+        <EditText
+            android:focusable="false"
+            android:id="@+id/edt_provience_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="City"
+            android:textSize="15dp"
+            android:fontFamily="@font/gilroylight"
+            android:textColor="@color/colorGrey"
+            />
+
+        <EditText
+            android:focusable="false"
+            android:id="@+id/edt_city_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Full Address "
+            android:textSize="15dp"
+            android:fontFamily="@font/gilroylight"
+            android:textColor="@color/colorGrey"
+            />
+        <EditText
+            android:id="@+id/edt_full_address_add"
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:maxLines="7"
+            android:minLines="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_add_address"
+            android:textColor="@color/colorWhite"
+            android:layout_marginVertical="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radius_button_black"
+            android:text="add Address"/>
+
+
+    </LinearLayout>
+    </ScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_address"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_address" />
+
+    <TextView
+        android:id="@+id/btn_confirm_address"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="@color/colorWhite"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/radius_button_black"
+        android:fontFamily="@font/gilroymedium"
+        android:text="Confirm"/>
+</LinearLayout>

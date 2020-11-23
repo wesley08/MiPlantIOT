@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    >
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    <TableRow>
+    <LinearLayout
+        android:background="@drawable/radius_button_white_without_line"
+        android:elevation="2dp"
+        android:layout_width="180dp"
+        android:orientation="vertical"
+        android:layout_marginRight="20dp"
+        android:layout_marginVertical="20dp"
+        android:layout_height="wrap_content">
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1">
+        <TableRow>
+            <ImageView
+                android:src="@drawable/plant"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp" />
+            <TextView
+                android:layout_gravity="center|right"
+                android:text="Moist"
+                android:background="@drawable/radius_button_greenc7"
+                android:gravity="right"
+                android:paddingVertical="5dp"
+                android:textColor="@color/colorWhite"
+                android:fontFamily="@font/gilroymedium"
+                android:paddingHorizontal="25dp" />
+        </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_span="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Soil Moisture"
+                    android:textSize="23dp"
+                    android:paddingVertical="5dp"
+                    android:textColor="@color/colorGrey9A"
+                    android:fontFamily="@font/gilroybold"
+                    android:paddingHorizontal="10dp" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/txt_sensor_soil_moisture"
+                    android:layout_span="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:gravity="left"
+                    android:paddingVertical="5dp"
+                    android:textColor="@color/colorGrey9A"
+                    android:fontFamily="@font/gilroylight"
+                    android:layout_marginBottom="8dp"
+                    android:paddingHorizontal="10dp" />
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:background="@drawable/radius_button_white_without_line"
+            android:elevation="2dp"
+            android:layout_width="180dp"
+            android:orientation="vertical"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content">
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1">
+                <TableRow>
+                    <ImageView
+                        android:src="@drawable/waterlevel"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="10dp" />
+                    <TextView
+                        android:layout_gravity="center|right"
+                        android:text="Moist"
+                        android:background="@drawable/radius_button_greenc7"
+                        android:gravity="right"
+                        android:paddingVertical="5dp"
+                        android:textColor="@color/colorWhite"
+                        android:fontFamily="@font/gilroymedium"
+                        android:paddingHorizontal="25dp" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_span="2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Water Level"
+                        android:textSize="23dp"
+                        android:paddingVertical="5dp"
+                        android:textColor="@color/colorGrey9A"
+                        android:fontFamily="@font/gilroybold"
+                        android:paddingHorizontal="10dp" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/txt_sensor_water_level"
+                        android:layout_span="2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:gravity="left"
+                        android:paddingVertical="5dp"
+                        android:textColor="@color/colorGrey9A"
+                        android:fontFamily="@font/gilroylight"
+                        android:layout_marginBottom="8dp"
+                        android:paddingHorizontal="10dp" />
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+    </TableRow>
+
+        <TableRow
+            >
+            <LinearLayout
+                android:background="@drawable/radius_button_white_without_line"
+                android:elevation="2dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="157dp"
+                android:orientation="vertical"
+                android:layout_marginRight="20dp"
+                android:layout_height="wrap_content">
+                <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="1">
+                    <TableRow>
+                        <ImageView
+                            android:src="@drawable/plant"
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginLeft="10dp" />
+                        <TextView
+                            android:layout_gravity="center|right"
+                            android:text="Moist"
+                            android:background="@drawable/radius_button_greenc7"
+                            android:gravity="right"
+                            android:paddingVertical="5dp"
+                            android:textColor="@color/colorWhite"
+                            android:fontFamily="@font/gilroymedium"
+                            android:paddingHorizontal="25dp" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_span="2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Soil Content"
+                            android:textSize="23dp"
+                            android:gravity="left"
+                            android:paddingVertical="5dp"
+                            android:textColor="@color/colorGrey9A"
+                            android:fontFamily="@font/gilroybold"
+                            android:paddingHorizontal="10dp" />
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:id="@+id/txt_sensor_soil_content"
+                            android:layout_span="2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="14dp"
+                            android:gravity="left"
+                            android:paddingVertical="5dp"
+                            android:textColor="@color/colorGrey9A"
+                            android:fontFamily="@font/gilroylight"
+                            android:layout_marginBottom="8dp"
+                            android:paddingHorizontal="10dp" />
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:src="@drawable/flower"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:scaleType="centerInside"
+                    android:foregroundGravity="center_horizontal"/>
+                <TextView
+                    android:layout_span="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Plant Information"
+                    android:textSize="20dp"
+                    android:gravity="right"
+                    android:paddingVertical="5dp"
+                    android:textColor="@color/colorGreenA8"
+                    android:fontFamily="@font/gilroybold"
+                    android:paddingHorizontal="10dp" />
+                <TextView
+                    android:id="@+id/txt_name_of_plant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sensor 600"
+                    android:textSize="14dp"
+                    android:textColor="@color/colorBlack"
+                    android:fontFamily="@font/gilroylight"
+                    android:paddingHorizontal="10dp" />
+                <TextView
+                    android:id="@+id/txt_age_of_plant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sensor 600"
+                    android:textSize="14dp"
+                    android:textColor="@color/colorBlack"
+                    android:fontFamily="@font/gilroylight"
+                    android:layout_marginBottom="8dp"
+                    android:paddingHorizontal="10dp" />
+            </LinearLayout>
+
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

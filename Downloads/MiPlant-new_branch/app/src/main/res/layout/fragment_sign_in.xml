@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginBottom="30dp"
+        >
+        <TextView
+            android:id="@+id/txt_hello"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome Back,"
+            android:fontFamily="@font/gilroybold"
+            android:textSize="45dp"
+            android:textColor="@color/colorBlack"
+            android:layout_marginBottom="10dp"/>
+        <TextView
+            android:id="@+id/txt_join"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter your information in here or login with a social media account."
+            android:textSize="15dp"
+            android:fontFamily="@font/gilroylight"
+            android:justificationMode="inter_word"
+            android:textColor="@color/colorGrey"
+            android:layout_marginBottom="10dp"/>
+
+        <LinearLayout
+            android:id="@+id/btn_signupwithgoogle1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radius_small_button_white"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:layout_marginVertical="20dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/google"
+                    android:layout_marginRight="10dp"/>
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/gilroylight"
+                    android:text="Sign Up with Google " />
+
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/txt_or"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="- OR -"
+            android:fontFamily="@font/gilroylight"
+            android:textSize="15dp"
+            android:textColor="@color/colorGrey"
+            android:layout_marginBottom="25dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="15dp"
+            android:fontFamily="@font/gilroylight"
+            android:textColor="@color/colorGrey"
+            />
+        <EditText
+            android:id="@+id/edt_email_sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:fontFamily="@font/gilroylight"
+            android:textSize="15dp"
+            android:textColor="@color/colorGrey"
+            />
+        <EditText
+            android:id="@+id/edt_password_sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txt_forgot_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/gilroylight"
+            android:text="Forgot Password?"
+            android:textSize="18dp"
+            android:textColor="@color/colorBlack"
+            android:layout_marginBottom="15dp"
+            />
+        <Button
+            android:id="@+id/btn_signin_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:fontFamily="@font/gilroylight"
+            android:layout_marginLeft="30dp"
+            android:textColor="#fff"
+            style="@style/ButtonSignINUP"
+            android:background="@drawable/radius_button_black"
+            android:layout_gravity="right"
+            android:paddingHorizontal="65dp"
+            android:layout_marginTop="25dp"
+            />
+
+
+
+
+
+    </LinearLayout>
+</RelativeLayout>

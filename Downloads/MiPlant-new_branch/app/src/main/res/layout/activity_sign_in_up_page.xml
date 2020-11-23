@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignInUpPage"
+    android:layout_marginTop="20dp"
+    android:orientation="horizontal"
+    android:paddingHorizontal="30dp">
+
+    <GridLayout
+        android:id="@+id/layoutbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        >
+
+        <TextView
+            android:id="@+id/txt_signup"
+            android:layout_width="70dp"
+            android:layout_height="28dp"
+            android:gravity="left"
+            android:textSize="15dp"
+            android:background="@drawable/button_regis_sign_up"
+            android:text="Sign Up"
+            android:layout_marginRight="20dp"
+            android:paddingBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/txt_signin"
+            android:layout_width="70dp"
+            android:layout_height="28dp"
+            android:gravity="left"
+            android:textSize="15dp"
+            android:text="Sign In"
+            android:textColor="#DBDBDB"
+            android:paddingBottom="10dp"/>
+
+    </GridLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foregroundGravity="center"
+        android:layout_marginTop="50dp">
+
+        <ImageView
+            android:layout_width="104dp"
+            android:layout_height="140dp"
+            android:layout_gravity="bottom|left"
+            android:alpha="0.4"
+            android:src="@drawable/tree" />
+    </FrameLayout>
+
+
+
+</RelativeLayout>

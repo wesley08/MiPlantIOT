@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:layout_marginTop="30dp">
+
+    <ImageView
+        android:layout_width="446dp"
+        android:layout_height="388dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/home" />
+
+    <TextView
+        android:id="@+id/txt_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:textSize="28dp"
+        android:fontFamily="@font/gilroybold"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlack"
+        android:layout_marginBottom="10dp"/>
+    <TextView
+        android:id="@+id/txt_welcome2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Here, to make a better world"
+        android:textSize="15dp"
+        android:fontFamily="@font/gilroymedium"
+        android:textColor="@color/colorBlack"
+        android:textAlignment="center"/>
+    <TextView
+        android:id="@+id/txt_welcome3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Join us now."
+        android:fontFamily="@font/gilroymedium"
+        android:textColor="@color/colorBlack"
+        android:textSize="15dp"
+        android:textAlignment="center"
+        android:layout_marginBottom="20dp"
+        />
+    <Button
+        android:id="@+id/btn_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up with Email Id"
+        android:layout_marginHorizontal="25dp"
+        android:fontFamily="@font/gilroylight"
+        android:textColor="#fff"
+        style="@style/ButtonSignINUP"
+        android:background="@drawable/radius_button_green"
+        android:layout_marginBottom="20dp"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/btn_signupwithgoogle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/radius_button_white"
+        android:clickable="true"
+        android:layout_marginHorizontal="25dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:layout_marginBottom="35dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/google"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/gilroylight"
+                android:text="Sign Up with Google " />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_alreadyhaveaccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Already have an account? Sign In"
+        android:textSize="15dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/gilroylight"
+        android:layout_marginBottom="20dp"
+        />
+
+</LinearLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/img_itemshop"
+        android:layout_width="match_parent"
+        android:layout_height="580dp"
+        android:layout_gravity="center"
+        android:background="@drawable/radius_image"
+        android:scaleType="centerCrop"
+        android:src="@color/colorGrey"
+         />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center|bottom"
+        >
+        <LinearLayout
+            android:layout_width="290dp"
+            android:layout_height="253dp"
+            android:background="@drawable/radius_button_white_without_line"
+            android:orientation="vertical"
+            android:elevation="1.5dp"
+            android:layout_marginBottom="30dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="20dp"
+                android:paddingHorizontal="20dp"
+                android:layout_marginBottom="3dp"
+                >
+                <TextView
+                    android:id="@+id/txt_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="test"
+                    android:textSize="13dp"
+                    android:fontFamily="@font/gilroybold"
+                    />
+                <TextView
+                    android:id="@+id/txt_nameItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="test"
+                    android:textSize="25dp"
+                    android:fontFamily="@font/gilroybold"
+                    />
+                <TextView
+                    android:id="@+id/txt_heightofplant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13dp"
+                    android:textColor="@color/colorGrey"
+                    android:fontFamily="@font/gilroylight"
+                    />
+                <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:stretchColumns="1">
+
+                    <TableRow>
+                        <TextView
+                            android:id="@+id/txt_row_1_column_1"
+                            android:fontFamily="@font/gilroybold"
+
+                            android:padding="3dip" />
+                        <TextView
+                            android:id="@+id/txt_row_1_column_2"
+
+                            android:gravity="right"
+                            android:fontFamily="@font/gilroylight"
+                            android:padding="3dip" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:id="@+id/txt_row_2_column_1"
+                            android:fontFamily="@font/gilroybold"
+
+                            android:padding="3dip" />
+                        <TextView
+                            android:id="@+id/txt_row_2_column_2"
+
+                            android:gravity="right"
+                            android:fontFamily="@font/gilroylight"
+                            android:padding="3dip" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:id="@+id/txt_row_3_column_1"
+                            android:fontFamily="@font/gilroybold"
+
+                            android:padding="3dip" />
+                        <TextView
+                            android:id="@+id/txt_row_3_column_2"
+
+                            android:gravity="right"
+                            android:fontFamily="@font/gilroylight"
+                            android:padding="3dip" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:id="@+id/txt_row_4_column_1"
+                            android:fontFamily="@font/gilroybold"
+
+                            android:padding="3dip" />
+                        <TextView
+                            android:id="@+id/txt_row_4_column_2"
+
+                            android:gravity="right"
+                            android:fontFamily="@font/gilroylight"
+                            android:padding="3dip" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:fontFamily="@font/gilroybold"
+                            android:text="Price "
+                            android:padding="3dip" />
+                        <TextView
+                            android:id="@+id/txt_price_value"
+                            android:text="test"
+                            android:gravity="right"
+                            android:textSize="20dp"
+                            android:fontFamily="@font/gilroybold"
+                            android:padding="3dip" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|bottom"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/txt_add_to_cart"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/radius_button_wishlist"
+                    android:fontFamily="@font/gilroymedium"
+                    android:textColor="@color/colorWhite"
+                    android:paddingVertical="8dp"
+                    android:paddingHorizontal="25dp"
+                    android:gravity="bottom|right"
+                    android:text="Add to Cart"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

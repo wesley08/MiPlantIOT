@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_gravity="center"
+
+    tools:context=".HomePage">
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:src="@drawable/right_image_wave" />
+        <LinearLayout
+            android:id="@+id/ll_menu"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/menu"
+            android:layout_width="40dp"
+            android:orientation="vertical"
+            android:elevation="3.5dp"
+            android:gravity="center"
+            android:layout_height="40dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <View
+                    android:layout_marginBottom="3dp"
+                    android:layout_width="23dp"
+                    android:layout_height="5dp"
+                    android:background="@color/colorGreenC7" />
+                <View
+                    android:layout_marginBottom="3dp"
+                    android:layout_width="18dp"
+                    android:layout_height="5dp"
+                    android:background="@color/colorGreenC7" />
+                <View
+                    android:layout_width="13dp"
+                    android:layout_height="5dp"
+                    android:background="@color/colorGreenC7" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ADMIN"
+                    android:textSize="30dp"
+                    android:fontFamily="@font/gilroybold"
+                    android:layout_marginBottom="30dp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_add_item_shop"
+                    android:text="Add Item Shop"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_list_item_shop"
+                    android:text="List Items shop "/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_approval_payment_customer"
+                    android:text="Approval Payment Customer "/>
+
+                <View
+                    android:layout_margin="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:background="@color/colorBlack" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="USER"
+                    android:textSize="30dp"
+                    android:fontFamily="@font/gilroybold"
+                    android:layout_marginBottom="30dp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_logout"
+                    android:text="logout"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_shop"
+                    android:text="shop"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_cart"
+                    android:text="Cart"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_history_details"
+                    android:text="History Details"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_tester"
+                    android:text="tester"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_add_device_user"
+                    android:text="add device"/>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerview_listdevicemiplant"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:listitem="@layout/item_list_device">
+
+
+                </androidx.recyclerview.widget.RecyclerView>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerview_devicemiplant"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="80dp"
+                    android:layout_marginLeft="10dp"
+                    tools:listitem="@layout/item_device_miplant">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+        <LinearLayout
+            android:background="@drawable/radius_button_white_without_line"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:elevation="3dp"
+            android:gravity="center|bottom"
+            android:layout_gravity="bottom"
+            android:layout_margin="20dp"
+            android:layout_height="60dp">
+        </LinearLayout>
+    </FrameLayout>
+
+
+</RelativeLayout>
